@@ -1,3 +1,28 @@
 <script type="text/javascript">
-var foods = <%= raw @foods.to_json %>;
+var foods = <%= raw @foods_json.to_json %>;
+document.write('<input type="text" id="text" size="100" />');
+document.write('<input type="button" id "search" value="Buscar!" />');
+for(var category in foods) {
+  document.write('<h3>' + category + '</h3>');
+  var subcategories = foods[category];
+  for(var subcategory in subcategories) {
+    document.write('<h4>' + subcategory + '</h4>');
+    var foods = subcategories[subcategory];
+    document.write('<ul>');
+    for(var i in foods) {
+      var food = foods[i];
+      document.write('<li>');
+      document.write(food['number']);
+      document.write('- ');
+      document.write(food['description']);
+      if (food['dedicated_to']) {
+        document.write(' (' + food['dedicated_to'] + ')');
+      }
+      document.write(' ... $');
+      document.write(food['price']);
+      document.write('</li>');
+    }
+    document.write('</ul>');
+  }
+}
 </script>

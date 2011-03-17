@@ -1,5 +1,5 @@
 class Food < ActiveRecord::Base
-  NOT_IN_JSON = ['id', 'created_at', 'updated_at']
+  NOT_IN_JSON = ['category', 'subcategory', 'created_at', 'updated_at']
 
   def self.parse(text)
     text =~ /^(.+?),(.+?),(.+?)-(.+?)(?:\((.+?)\))?,(.+?)$/
@@ -14,6 +14,8 @@ class Food < ActiveRecord::Base
   end
 
   def as_json(options = {})
-    super.reject{|k, v| NOT_IN_JSON.include?(k)}
+    json = super.reject{|k, v| NOT_IN_JSON.include?(k)}
+    json['price'] = '%.2f' % json['price'].to_f
+    json
   end
 end
