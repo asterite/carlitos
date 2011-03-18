@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+APP_PATH = File.expand_path('../../config/application',  __FILE__)
+require File.expand_path('../../config/boot',  __FILE__)
+require File.expand_path('../../config/environment',  __FILE__)
+
+Food
+
+puts "Enter the category:"
+category = gets.strip.upcase
+
+puts "Enter the subcategory:"
+subcategory = gets.strip
+
+while true
+  puts "Enter the text:"
+  text = gets.strip
+
+  puts "Enter the price:"
+  price = gets.strip
+
+  food = Food.parse "#{category}XXX#{subcategory}XXX#{text}XXX#{price}"
+  food.save!
+  puts "Saved!"
+end

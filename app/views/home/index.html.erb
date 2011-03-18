@@ -2,7 +2,7 @@
   <input type="text" id="text" size="100" />
   <input type="button" id="search" value="Buscar!" />
 </div>
-<div id="ejemplo">Ejemplo: panqueue, crudo, roquefort, ananá</div>
+<div id="ejemplo">Ejemplo: panqueue, queso, tomate</div>
 
 <div id="menu"></div>
 
@@ -70,15 +70,15 @@
 
     for(var i in pieces) {
       var piece = pieces[i];
-      if (text.indexOf(piece) >= 0) {
-        return true;
+      if (text.indexOf(piece) < 0) {
+        return false;
       }
     }
-    return false;
+    return true;
   }
 
   function fix(text) {
-    return text.toLowerCase().replace('á', 'a').replace('é', 'e').replace('í', 'i').replace('ó', 'o').replace('ú', 'u');
+    return text.toLowerCase().replace(/á/g, 'a').replace(/é/g, 'e').replace(/í/g, 'i').replace(/ó/g, 'o').replace(/ú/g, 'u');
   }
 
   function add_full_text_search() {
@@ -88,7 +88,7 @@
         var foods = subcategories[subcategory];
         for(var i in foods) {
           var food = foods[i];
-          food['full'] = category + ' ' + subcategory + ' ' + food['description'] + food['dedicated_to'] + ' $' + food['price'];
+          food['full'] = category + ' ' + subcategory + ' ' + food['number'] + ' ' + food['description'] + ' ' + food['dedicated_to'] + ' $' + food['price'];
           food['full'] = fix(food['full']);
         }
       }
@@ -105,8 +105,8 @@
   document.getElementById("search").onclick = function() {
     menu.innerHTML = get_categories(split(text.value));
   }
-  document.getElementById("text").onkeydown = function(e) {
-    if (e.keyCode == 13)
+  document.getElementById("text").onkeyup = function(e) {
+    //if (e.keyCode == 13)
       menu.innerHTML = get_categories(split(text.value));
   }
 </script>
