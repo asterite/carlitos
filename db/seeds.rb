@@ -1,7 +1,18 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
-#   Mayor.create(:name => 'Daley', :city => cities.first)
+Food.delete_all
+
+{"HAMBURGUESAS" =>
+   {"_" => [
+           ["1- Sola", "10.00"],
+           ["2- Con queso o tomate", "12.00"],
+   ]
+   }
+}.each do |category, subcategories|
+  subcategories.each do |subcategory, foods|
+    foods.each do |text, price|
+      food = Food.parse "#{category}XXX#{subcategory}XXX#{text}XXX#{price}"
+      food.subcategory = "" if food.subcategory == "_"
+      food.save!
+    end
+  end
+end
+
