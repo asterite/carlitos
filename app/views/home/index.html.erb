@@ -1,28 +1,112 @@
+<div id="controls">
+  <input type="text" id="text" size="100" />
+  <input type="button" id="search" value="Buscar!" />
+</div>
+<div id="ejemplo">Ejemplo: panqueue, crudo, roquefort, ananá</div>
+
+<div id="menu"></div>
+
 <script type="text/javascript">
-var foods = <%= raw @foods_json.to_json %>;
-document.write('<input type="text" id="text" size="100" />');
-document.write('<input type="button" id "search" value="Buscar!" />');
-for(var category in foods) {
-  document.write('<h3>' + category + '</h3>');
-  var subcategories = foods[category];
-  for(var subcategory in subcategories) {
-    document.write('<h4>' + subcategory + '</h4>');
-    var foods = subcategories[subcategory];
-    document.write('<ul>');
+  function get_foods(foods, pieces) {
+    var str = "";
     for(var i in foods) {
       var food = foods[i];
-      document.write('<li>');
-      document.write(food['number']);
-      document.write('- ');
-      document.write(food['description']);
+      if (!matches(food['full'], pieces))
+        continue;
+
+      str += '<li>';
+      str += food['number'];
+      str += '- ';
+      str += food['description'];
       if (food['dedicated_to']) {
-        document.write(' (' + food['dedicated_to'] + ')');
+        str += ' (' + food['dedicated_to'] + ')';
       }
-      document.write(' ... $');
-      document.write(food['price']);
-      document.write('</li>');
+      str += ' ... $';
+      str += food['price'];
+      str += '</li>';
     }
-    document.write('</ul>');
+    return str;
   }
-}
+
+  function get_subcategories(subcategories, pieces) {
+    var str = "";
+    for(var subcategory in subcategories) {
+      var foods = subcategories[subcategory];
+      var str_foods = get_foods(foods, pieces);
+      if (str_foods != "")
+        str += "<h4>" + subcategory + "</h4><ul>" + str_foods + "</ul>";
+    }
+    return str;
+  }
+
+  function get_categories(pieces) {
+    var str = "";
+    for(var category in categories) {
+      var subcategories = categories[category];
+      var str_sub = get_subcategories(subcategories, pieces);
+      if (str_sub != "")
+        str += "<h3>" + category + "</h3>" + str_sub;
+    }
+    return str;
+  }
+
+  function trim(text) {
+    return text.replace(/^\s+/g,'').replace(/\s+$/g,'');
+  }
+
+  function split(text) {
+    var pieces = text.split(',');
+    var better_pieces = [];
+    for(var i in pieces) {
+      var piece = trim(pieces[i]);
+      if (piece != '')
+        better_pieces.push(fix(piece));
+    }
+    return better_pieces;
+  }
+
+  function matches(text, pieces) {
+    if (pieces.length == 0) return true;
+
+    for(var i in pieces) {
+      var piece = pieces[i];
+      if (text.indexOf(piece) >= 0) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  function fix(text) {
+    return text.toLowerCase().replace('á', 'a').replace('é', 'e').replace('í', 'i').replace('ó', 'o').replace('ú', 'u');
+  }
+
+  function add_full_text_search() {
+    for(var category in categories) {
+      var subcategories = categories[category];
+      for(var subcategory in subcategories) {
+        var foods = subcategories[subcategory];
+        for(var i in foods) {
+          var food = foods[i];
+          food['full'] = category + ' ' + subcategory + ' ' + food['description'] + food['dedicated_to'] + ' $' + food['price'];
+          food['full'] = fix(food['full']);
+        }
+      }
+    }
+  }
+
+  var categories = <%= raw @foods_json.to_json %>;
+  add_full_text_search();
+
+  var text = document.getElementById("text");
+  var menu = document.getElementById("menu");
+
+  menu.innerHTML = get_categories([]);
+  document.getElementById("search").onclick = function() {
+    menu.innerHTML = get_categories(split(text.value));
+  }
+  document.getElementById("text").onkeydown = function(e) {
+    if (e.keyCode == 13)
+      menu.innerHTML = get_categories(split(text.value));
+  }
 </script>
