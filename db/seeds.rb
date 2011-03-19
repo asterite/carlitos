@@ -189,7 +189,17 @@ Food.delete_all
        ["145- Salchicha, chucrut, aceitunas y queso", "21.00"],
        ["146- Salchicha y berenjenas", "19.00"],
        ["147- Salchicha, berenjenas y queso", "20.00"],
-     ]
+     ],
+     "Con champignon" => [
+       ["148- Champignon, queso y cebolla (A CARLOS GARDEL)", "20.00"],
+       ["149- Champignon, queso, cebolla y tomates", "21.00"],
+       ["150- Champignon, queso, cebolla y aceitunas negras", "21.00"],
+       ["151- Champignon, queso, cebolla, aceitunas y tomates", "22.00"],
+       ["152- Champignon y queso blanco", "19.00"],
+       ["153- Champignon queso blanco y cebolla (A JORGE L. BORGES)", "20.00"],
+       ["154- Champignon queso blanco, cebolla y tomate (DEDICADO A FITO PAEZ)", "21.00"],
+       ["155- Champignon queso blanco, cebolla y aceitunas negras (A VIOLETA PARRA)", "21.00"],
+     ],
    }
 }.each do |category, subcategories|
   subcategories.each do |subcategory, foods|
