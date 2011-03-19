@@ -11,22 +11,22 @@
     var str = "";
     for(var i in foods) {
       var food = foods[i];
-      if (!matches(food['full'], pieces))
+      if (!matches(food[<%= Food::Full %>], pieces))
         continue;
 
       str += '<li>';
-      if (food['number'] == '') {
+      if (food[<%= Food::Number %>] == '') {
         str += ' &nbsp; &nbsp; &nbsp; ';
       } else {
-        str += food['number'];
+        str += food[<%= Food::Number %>];
         str += '- ';
       }
-      str += food['description'];
-      if (food['dedicated_to']) {
-        str += ' (' + food['dedicated_to'] + ')';
+      str += food[<%= Food::Description %>];
+      if (food[<%= Food::DedicatedTo %>]) {
+        str += ' (' + food[<%= Food::DedicatedTo %>] + ')';
       }
       str += ' ... $';
-      str += food['price'];
+      str += food[<%= Food::Price %>];
       str += '</li>';
     }
     return str;
@@ -92,8 +92,9 @@
         var foods = subcategories[subcategory];
         for(var i in foods) {
           var food = foods[i];
-          food['full'] = category + ' ' + subcategory + ' ' + food['number'] + ' ' + food['description'] + ' ' + food['dedicated_to'] + ' $' + food['price'];
-          food['full'] = fix(food['full']);
+          var full = category + ' ' + subcategory + ' ' + food[<%= Food::Number %>] + ' ' + food[<%= Food::Description %>] + ' ' + food[<%= Food::DedicatedTo %>] + ' $' + food[<%= Food::Price %>];
+          full = fix(full);
+          food.push(full);
         }
       }
     }
