@@ -222,6 +222,53 @@ Food.delete_all
        ["170- Jamón crudo", "13.00"],
      ]
    },
+ "ENSALADAS VARIAS" => {
+     "Al gran hombre dedicado a la paz: Mahatma Gandhi" => [
+       ["171- Tomate", "11.00"],
+       ["172- Lechuga", "11.00"],
+       ["173- Tomate y lechuga", "13.00"],
+       ["174- Tomate, lechuga y cebolla", "15.00"],
+       ["175- Zanahoria", "12.00"],
+       ["178- Remolacha y zanahoria", "14.00"],
+       ["179- Remolacha cruda o cocida", "13.00"],
+       ["180- Completa (lechuga, tomate, cebolla, zanahoria, remolacha y huevo)", "17.00"],
+     ]
+   },
+ "PANQUEQUES DULCES" => {
+     "Con dulce de leche" => [
+       ["182- Dulce de leche", "14.00"],
+       ["183- Dulce de leche bañado con chocolate", "16.00"],
+       ["184- Dulce de leche con azúcar glaseado (AL AMIGO JACINTO GAIBUR)", "16.00"],
+       ["185- Dulce de leche y nuez", "16.00"],
+       ["186- Dulce de leche y nuez bañado en chocolate", "18.00"],
+       ["187- Dulce de leche y crema (AL MÚSICO Y POETA LUIS ALBERTO SPINETTA)", "17.00"],
+       ["188- Dulce de leche y crema bañado en chocolate (DEDICADO A GUSTAVO RIOLO)", "18.00"],
+       ["189- Dulce de leche, crema y nuez", "17.00"],
+       ["190- Dulce de leche y ananá", "18.00"],
+       ["191- Dulce de leche y ananá bañado en chocolate (MARIANA BARAJ)", "18.00"],
+       ["192- Dulce de leche, crema y frutillas (A LA JUVENTUS QUE ME SIGUE CON CARIÑO)", "20.00"],
+       ["192 BIS- Dulce de leche, crema y frutillas bañado en chocolate (DEDICADO A JAIRO)", "21.00"],
+       ["193- Dulce de leche, crema y frambuesas (A LAS FAMILIAS QUE ME SIGUEN HACE 35 AÑOS)", "20.00"],
+       ["194- Dulce de leche, crema y cerezas (A LITO VITALE)", "20.00"],
+       ["195- Dulce de leche, crema y guindas (DEDICADO A ALEJANDRO LERNER)", "20.00"],
+       ["196- Dulce de leche y banana (DEDICADO A LOS CHICOS DE VIAGRAFICA)", "17.00"],
+       ["197- Dulce de leche, crema y banana", "19.00"],
+       ["197 BIS- Dulce de leche, crema, banana y frutilla bañada en chocolate (MI REFUGIO)", "22.00"],
+       ["198- Dulce de leche y banana, bañado en chocolate y coco (DEDICADO A DIEGO A. MARADONA)", "20.00"],
+       ["199- Dulce de leche, crema y banana, bañado en chocolate (DEDICADO A FELIPE PIGNA)", "21.00"],
+       ["200- Dulce de leche, manzana salteada (A TITO ONETO)", "17.00"],
+       ["201- Dulce de leche, manzana salteada bañado en chocolate (A SILVIO RODRIGUEZ)", "18.00"],
+       ["202- Dulce de leche y crema glaseado", "18.00"],
+       ["203- Dulce de leche, mendicrim y nuez (DEDICADO A ANDRÉS CALAMARO)", "20.00"],
+       ["204- Dulce de leche y mendicrim", "17.00"],
+       ["205- Dulce de leche y almendras", "16.00"],
+       ["206- Dulce de leche y almendras bañado en chocolate (DEDICADO A JOSÉ L. CABEZAS)", "18.00"],
+       ["207- Dulce de leche, crema y almendras (A LOS AUTÉNTICOS DECADENTES)", "18.00"],
+       ["208- Dulce de leche y castañas (A IGNACIO COPANI)", "19.00"],
+       ["209- Dulce de leche, crema y castañas (A IGNACIO COPANI)", "21.00"],
+       ["210- Dulce de leche, mendicrim y almendras bañado en chocolate", "21.00"],
+     ]
+   }
 }.each do |category, subcategories|
   subcategories.each do |subcategory, foods|
     foods.each do |text, price|
