@@ -153,6 +153,19 @@ Food.delete_all
        ["115- Con mayonesa de palta, mendicrim y chucrut (AL SELECCIONADO DE LOS PUMAS)", "19.00"],
        ["116- Con mayonesa de palta, roquefort y chucrut", "20.00"],
        ["117- Con mayonesa de palta y corazón de alcauciles", "19.00"],
+     ],
+     "Con ricota" => [
+       ["118- Con ricota", "15.00"],
+       ["119- Con ricota y cebolla", "16.00"],
+       ["120- Ricota, cebolla y aceitunas negras", "18.00"],
+       ["121- Ricota, cebolla y jamón cocido", "20.00"],
+       ["122- Ricota, jamón cocido, cebolla y huevo (A IRINEO LEGUIZAMO)", "22.00"],
+       ["123- Ricota y jamón cocido", "19.00"],
+       ["124- Ricota, jamón cocido y ananá", "20.00"],
+       ["125- Ricota, jamón crudo y ananá", "23.00"],
+       ["126- Ricota, jamón cocido y aceitunas negras", "20.00"],
+       ["127- Ricota, berenjenas y corazón de alcauciles", "21.00"],
+       ["128- Ricota, berenjenas y aceitunas negras", "21.00"],
      ]
    }
 }.each do |category, subcategories|
