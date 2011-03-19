@@ -200,6 +200,18 @@ Food.delete_all
        ["154- Champignon queso blanco, cebolla y tomate (DEDICADO A FITO PAEZ)", "21.00"],
        ["155- Champignon queso blanco, cebolla y aceitunas negras (A VIOLETA PARRA)", "21.00"],
      ],
+     "Con atún" => [
+       ["156- Atún y queso", "17.00"],
+       ["157- Atún y cebolla", "17.00"],
+       ["158- Atún, cebolla y queso (A CAETANO VELOSO)", "20.00"],
+       ["159- Atún, queso, cebolla y tomates", "21.00"],
+       ["160- Atún, queso, cebolla, tomate y mendicrim (PARA LA DRA. FARCAS)", "23.00"],
+       ["161- Atún, cebolla y tomate", "20.00"],
+       ["162- Atún, cebolla y ricota (DEDICADO A ERNESTO SÁBATO)", "20.00"],
+       ["163- Atún y ricota (A TITO VIERA)", "18.00"],
+       ["164- Atún, cebolla y queso blanco (A NESTOR IBARA, BUEN HOMBRE)", "20.00"],
+       ["165- Atún, cebolla, queso blanco y aceitunas negras (A MARCELO TINELLI)", "22.00"],
+     ],
    }
 }.each do |category, subcategories|
   subcategories.each do |subcategory, foods|
