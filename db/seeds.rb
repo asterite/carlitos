@@ -107,7 +107,26 @@ Food.delete_all
      ],
      "Con Jamón Cocido" => [
        ["77- Jamón cocido y queso (PARA EL ESCRITOR JULIO CORTAZAR)", "17.00"],
-     ]
+       ["78- Jamón cocido, queso y ananá (AL GRANDE FEDE)", "19.00"],
+       ["79- Jamón cocido, queso y azúcar glaseada (DEDICADO A MERCEDES SOSA)", "18.00"],
+       ["80- Jamón cocido, queso y cebolla (DEDICADO AL CURA MUGICA)", "19.00"],
+       ["81- Jamón cocido, queso y tomate", "20.00"],
+       ["82- Jamón cocido, queso, tomate, plamitos y orégano (RESIDENTES DE LA VILLA)", "23.00"],
+       ["83- Jamón cocido, queso, tomate y huevo (GUARDAVIDAS)", "22.00"],
+       ["84- Jamón cocido, queso y choclo (DEDICADO A STELLA CALON)", "20.00"],
+       ["85- Jamón cocido, manzana salteada y azúcar glaseada (DEDICADO A LUIS LANDRISCINA)", "19.00"],
+       ["86- Jamón cocido, queso, panceta y arvejas (A TONY)", "22.00"],
+     ],
+     "Con Queso" => [
+       ["87- Con queso (EL CUBANO)", "14.00"],
+       ["88- Queso, choclo y huevos (DEDICADO A JUAN CARLOS JUNIO)", "19.00"],
+       ["89- Queso, choclo, huevos y arvejas (DEDICADO A SALVADOR ALLENDE)", "21.00"],
+       ["90- Queso, tomate y orégano (AL GRAN POETA PABLO NERUDA)", "18.00"],
+       ["91- Queso, cebolla y orégano (AL GRAN ESCRITOR HAROLDO CONTI)", "18.00"],
+       ["92- Queso, cebolla y champignon (AL MONSEÑOR HESAYME)", "20.00"],
+       ["93- Queso, cebolla y aceitunas negras (DEDICADO A MONSEÑOR REY)", "19.00"],
+       ["94- Queso, aceitunas negras", "18.00"],
+     ],
    }
 }.each do |category, subcategories|
   subcategories.each do |subcategory, foods|
