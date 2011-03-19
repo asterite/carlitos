@@ -177,6 +177,18 @@ Food.delete_all
        ["135- Berenjenas, queso balnco y choclo", "19.00"],
        ["136- Berenjenas y queso balnco", "18.00"],
        ["137- Berenjenas y choclo (DEDICADO A JUAN MANUEL FANGIO)", "18.00"],
+     ],
+     "Con salchichas" => [
+       ["138- Salchicha y queso", "17.00"],
+       ["139- Salchicha, panceta y queso", "20.00"],
+       ["140- Salchicha, panceta y cebolla", "21.00"],
+       ["141- Salchicha, panceta, cebolla y queso (A LAS MAESTRAS JARDINERAS)", "22.00"],
+       ["142- Salchicha y chucrut", "17.00"],
+       ["143- Salchicha, panceta y chucrut", "21.00"],
+       ["144- Salchicha, chucrut y queso", "21.00"],
+       ["145- Salchicha, chucrut, aceitunas y queso", "21.00"],
+       ["146- Salchicha y berenjenas", "19.00"],
+       ["147- Salchicha, berenjenas y queso", "20.00"],
      ]
    }
 }.each do |category, subcategories|
