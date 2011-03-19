@@ -64,27 +64,43 @@
   }
 
   function split(text) {
-    text = text.replace(/\scon\s/gi, ',');
-    text = text.replace(/\sy\s/gi, ',');
+    text = text.replace(/\by\b/gi, ',');
+    text = text.replace(/\bcon\b/gi, ',+');
+    text = text.replace(/\b(sin|ni)\b/gi, ',-');
     var pieces = text.split(',');
-    var better_pieces = [];
+    var result = [];
     for(var i in pieces) {
       var piece = trim(pieces[i]);
       if (piece != '')
-        better_pieces.push(fix(piece));
+        result.push(fix(piece));
     }
-    return better_pieces;
+    return result;
   }
 
   function matches(text, pieces) {
     if (pieces.length == 0) return true;
 
+    var mode = '+'
+
     for(var i in pieces) {
       var piece = pieces[i];
-      if (text.indexOf(piece) < 0) {
-        return false;
+      if (piece[0] == '-' || piece[0] == '+') {
+        mode = piece[0];
+        piece = piece.substring(1, piece.length);
+        if (piece.length == 0) continue;
+      }
+
+      if (mode == '+') {
+        if (text.indexOf(piece) < 0) {
+          return false;
+        }
+      } else {
+        if (text.indexOf(piece) >= 0) {
+          return false;
+        }
       }
     }
+
     return true;
   }
 
