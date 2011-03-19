@@ -15,8 +15,12 @@
         continue;
 
       str += '<li>';
-      str += food['number'];
-      str += '- ';
+      if (food['number'] == '') {
+        str += ' &nbsp; &nbsp; &nbsp; ';
+      } else {
+        str += food['number'];
+        str += '- ';
+      }
       str += food['description'];
       if (food['dedicated_to']) {
         str += ' (' + food['dedicated_to'] + ')';

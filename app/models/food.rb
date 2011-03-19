@@ -1,16 +1,9 @@
 class Food < ActiveRecord::Base
   NOT_IN_JSON = ['category', 'subcategory', 'created_at', 'updated_at']
 
-  def self.parse(text)
-    text =~ /^(.+?)XXX(.+?)XXX(.+?)-(.+?)(?:\((.+?)\))?XXX(.+?)$/
-    Food.new(
-      :category => $1.strip,
-      :subcategory => $2.strip,
-      :number => $3.strip,
-      :description => $4.strip,
-      :dedicated_to => $5.try(:strip) || '',
-      :price => $6.to_f
-    )
+  def self.parse(text, options = {})
+    text =~ /^(?:(.+?)-)?(.+?)(?:\((.+?)\))?$/
+    Food.new(options.merge(:number => $1.try(:strip) || '', :description => $2.strip, :dedicated_to => $5.try(:strip) || ''))
   end
 
   def as_json(options = {})
