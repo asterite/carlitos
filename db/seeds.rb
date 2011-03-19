@@ -166,6 +166,17 @@ Food.delete_all
        ["126- Ricota, jamón cocido y aceitunas negras", "20.00"],
        ["127- Ricota, berenjenas y corazón de alcauciles", "21.00"],
        ["128- Ricota, berenjenas y aceitunas negras", "21.00"],
+     ],
+     "Con berenjenas" => [
+       ["129- Con berenjenas", "15.00"],
+       ["130- Berenjenas y paltas", "17.00"],
+       ["131- Berenjenas, palta y corazón de alcauciles (A FERNANDO PEÑA)", "21.00"],
+       ["132- Berenjenas, corazón de alcauciles y aceitunas negras", "21.00"],
+       ["133- Berenjenas, palta y tomates", "19.00"],
+       ["134- Berenjenas, queso balnco y aceitunas negras (DEDICADO A ASTOR PIAZZOLA)", "19.00"],
+       ["135- Berenjenas, queso balnco y choclo", "19.00"],
+       ["136- Berenjenas y queso balnco", "18.00"],
+       ["137- Berenjenas y choclo (DEDICADO A JUAN MANUEL FANGIO)", "18.00"],
      ]
    }
 }.each do |category, subcategories|
