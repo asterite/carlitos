@@ -64,9 +64,9 @@
   }
 
   function split(text) {
-    text = text.replace(/\by\b/gi, ',');
-    text = text.replace(/\bcon\b/gi, ',+');
-    text = text.replace(/\b(sin|ni)\b/gi, ',-');
+    text = text.replace(/\by\s+/gi, ',');
+    text = text.replace(/\bcon\s+/gi, ',+');
+    text = text.replace(/\b(sin|ni)\s+/gi, ',-');
     var pieces = text.split(',');
     var result = [];
     for(var i in pieces) {
@@ -91,10 +91,13 @@
       }
 
       if (mode == '+') {
-        if (text.indexOf(piece) < 0) {
+        if (text.indexOf(piece) < 0 || text.indexOf('sin ' + piece) >= 0) {
           return false;
         }
       } else {
+        if (text.indexOf('sin ' + piece) >=0) {
+          continue;
+        }
         if (text.indexOf(piece) >= 0) {
           return false;
         }
