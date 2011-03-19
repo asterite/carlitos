@@ -127,6 +127,22 @@ Food.delete_all
        ["93- Queso, cebolla y aceitunas negras (DEDICADO A MONSEÑOR REY)", "19.00"],
        ["94- Queso, aceitunas negras", "18.00"],
      ],
+     "Con Roquefort" => [
+       ["95- Solo con roquefort (DEDICADO A ATAHUALPA YUPANQUI)", "15.00"],
+       ["96- Roquefort y nuez (DEDICADO AL GRAN CARLOS MONZON)", "17.00"],
+       ["97- Roquefort, cebolla y jamón cocido (AL GRAN CARLITOS CHAPLIN)", "20.00"],
+       ["98- Roquefort y jamón crudo (A LUIS SANDRINI)", "21.00"],
+       ["99- Roquefort, palta, panceta y cebolla (PARA CIRIO)", "22.00"],
+       ["100- Roquefort, jamón crudo y ananá (DEDICADO A JUAN MANUEL SERRAT)", "23.00"],
+       ["101- Roquefort, nuez y palmitos (A ANIBAL TROILO)", "21.00"],
+       ["102- Roquefort, palta, panceta y nuez (A HUGO CONTE)", "22.00"],
+       ["103- Roquefort, palta y corazón de alcauciles (A JORGE CORONA)", "21.00"],
+       ["104- Roquefort, palta y aceitunas negras (A LOS VERGARA)", "20.00"],
+       ["105- Roquefort y chucrut (DEDICADO AL COMICO HUGO VARELA)", "19.00"],
+       ["106- Roquefort, chucrut y palta (AL GRAN CONDUCTOR CACHO FONTANA)", "20.00"],
+       ["107- Roquefort y apio (DEDICADO A TERESA PARODI)", "17.00"],
+       ["108- Roquefort, apio y nuez (DEDICADO AL SINDICALISTA HUGO PIUMATTO)", "19.00"],
+     ],
    }
 }.each do |category, subcategories|
   subcategories.each do |subcategory, foods|
