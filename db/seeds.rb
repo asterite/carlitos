@@ -143,6 +143,17 @@ Food.delete_all
        ["107- Roquefort y apio (DEDICADO A TERESA PARODI)", "17.00"],
        ["108- Roquefort, apio y nuez (DEDICADO AL SINDICALISTA HUGO PIUMATTO)", "19.00"],
      ],
+     "Con mayonesa de palta" => [
+       ["109- Con mayonesa de palta", "15.00"],
+       ["110- Con mayonesa de palta y mendicrim (AL MUSICO JULIO SALAMANCA)", "16.00"],
+       ["111- Con mayonesa de palta, mendicrim y nuez (AL POETA ARMANDO TEJADA GOMEZ)", "17.00"],
+       ["112- Con mayonesa de palta y roquefort", "18.00"],
+       ["113- Con mayonesa de palta, mendicrim, roquefort y aceitunas negras", "20.00"],
+       ["114- Con mayonesa de palta, roquefort y corazón de alcauciles (A LOS EMPLEADOS DEL BANCO NACIÓN)", "20.00"],
+       ["115- Con mayonesa de palta, mendicrim y chucrut (AL SELECCIONADO DE LOS PUMAS)", "19.00"],
+       ["116- Con mayonesa de palta, roquefort y chucrut", "20.00"],
+       ["117- Con mayonesa de palta y corazón de alcauciles", "19.00"],
+     ]
    }
 }.each do |category, subcategories|
   subcategories.each do |subcategory, foods|
