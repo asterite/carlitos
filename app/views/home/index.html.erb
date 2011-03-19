@@ -64,6 +64,8 @@
   }
 
   function split(text) {
+    text = text.replace(/\scon\s/gi, ',');
+    text = text.replace(/\sy\s/gi, ',');
     var pieces = text.split(',');
     var better_pieces = [];
     for(var i in pieces) {
