@@ -212,7 +212,16 @@ Food.delete_all
        ["164- Atún, cebolla y queso blanco (A NESTOR IBARA, BUEN HOMBRE)", "20.00"],
        ["165- Atún, cebolla, queso blanco y aceitunas negras (A MARCELO TINELLI)", "22.00"],
      ],
-   }
+   },
+ "PEBETES" => {
+     "" => [
+       ["166- Queso", "10.00"],
+       ["167- Jamón cocido y queso", "12.00"],
+       ["168- Jamón cocido", "11.00"],
+       ["169- Jamón crudo y queso", "14.00"],
+       ["170- Jamón crudo", "13.00"],
+     ]
+   },
 }.each do |category, subcategories|
   subcategories.each do |subcategory, foods|
     foods.each do |text, price|
