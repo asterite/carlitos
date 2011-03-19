@@ -95,6 +95,19 @@ Food.delete_all
        ["70- Chucrut y queso", "12.00"],
        ["71- Panceta, queso, cebolla y chucrut", "14.00"],
      ]
+   },
+ "PANQUEUES SALADOS" => {
+     "Con Jamón Crudo" => [
+       ["72- Jamón crudo y queso (DEDICADO A ALEJANDRO DOLINA)", "18.00"],
+       ["73- Jamón crudo, queso y ananá (DEDICADO A OSVALDO PUGLIESE)", "20.00"],
+       ["74- Jamón crudo y melón (DEDICADO A PEDRO AZNAR)", "20.00"],
+       ["75- Jamón crudo, queso y tomate (A LA GLORIOSA J. P.)", "21.00"],
+       ["75 BIS- Jamón crudo, queso y tomate con masa de espinaca (A LALO MIR)", "21.00"],
+       ["76- Jamón crudo, queso tomate, palmitos y orégano (A LAS MADRES DE PLAZA DE MAYO)", "24.00"],
+     ],
+     "Con Jamón Cocido" => [
+       ["77- Jamón cocido y queso (PARA EL ESCRITOR JULIO CORTAZAR)", "17.00"],
+     ]
    }
 }.each do |category, subcategories|
   subcategories.each do |subcategory, foods|

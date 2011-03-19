@@ -37,8 +37,12 @@
     for(var subcategory in subcategories) {
       var foods = subcategories[subcategory];
       var str_foods = get_foods(foods, pieces);
-      if (str_foods != "")
-        str += "<h4>" + subcategory + "</h4><ul>" + str_foods + "</ul>";
+      if (str_foods.length > 0) {
+        if (subcategory.length > 0) {
+          str += "<h4>" + subcategory + "</h4>";
+        }
+        str += "<ul>" + str_foods + "</ul>";
+      }
     }
     return str;
   }
@@ -48,8 +52,9 @@
     for(var category in categories) {
       var subcategories = categories[category];
       var str_sub = get_subcategories(subcategories, pieces);
-      if (str_sub != "")
+      if (str_sub.length > 0) {
         str += "<h3>" + category + "</h3>" + str_sub;
+      }
     }
     return str;
   }
