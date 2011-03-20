@@ -294,6 +294,19 @@ Food.delete_all
        ["231- Mouse de frambuesa y frutillas", "20.00"],
        ["232- Mouse de frutilla, frambuesa, cerezas, guindas, baño de chocolate y coco", "24.00"],
        ["233- Mouse de frutilla, frambuesa, cerezas, guindas y helado de vainilla (DEDICADO AL NIETO DE CARLITOS, JONY)", "26.00"],
+     ],
+     "Con mendicrim" => [
+       ["234- Mendicrim", "14.00"],
+       ["235- Mendicrim y miel (A GUILLERMO VILAS)", "16.00"],
+       ["236- Mendicrim, miel y castañas", "18.00"],
+       ["237- Mendicrim, miel y manzana salteada", "19.00"],
+       ["238- Mendicrim, manzana salteada, baño de chocolate (A NELSON MANDELA)", "20.00"],
+       ["239- Mendicrim, puré de manzanas, azúcar glaseada", "20.00"],
+       ["240- Mendicrim, puré de manzanas, almendras y baño de chocolate", "22.00"],
+       ["241- Mendicrim, miel y canela", "20.00"],
+       ["242- Mendicrim, higo y miel (AL ACTOR Y DIRECTOR, RICARDO BARTHIS)", "21.00"],
+       ["243- Mendicrim, higo, miel y castañas", "23.00"],
+       ["244- Mendicrim, banana, miel y canela (A NITO ARTAZA)", "21.00"],
      ]
    }
 }.each do |category, subcategories|
