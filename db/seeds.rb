@@ -283,6 +283,17 @@ Food.delete_all
        ["222- Crema y banana salteada", "20.00"],
        ["223- Crema, manzana salteada y baño de chocolate", "20.00"],
        ["224- Crema glaseada con azúcar", "18.00"],
+     ],
+     "Con frutas rosas" => [
+       ["225- Crema y frutillas (DEDICADO A TITA MERELLO)", "19.00"],
+       ["226- Crema y frambuesas (A LA GRAN ARTISTA INDA LEDESMA)", "19.00"],
+       ["227- Crema y cerezas", "19.00"],
+       ["228- Crema y guindas", "19.00"],
+       ["229- Crema, frutillas, frambuesas, cerezas y guindas", "22.00"],
+       ["230- Mouse de frutillas y frambuesa", "20.00"],
+       ["231- Mouse de frambuesa y frutillas", "20.00"],
+       ["232- Mouse de frutilla, frambuesa, cerezas, guindas, baño de chocolate y coco", "24.00"],
+       ["233- Mouse de frutilla, frambuesa, cerezas, guindas y helado de vainilla (DEDICADO AL NIETO DE CARLITOS, JONY)", "26.00"],
      ]
    }
 }.each do |category, subcategories|
