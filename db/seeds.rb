@@ -318,6 +318,17 @@ Food.delete_all
        ["251- Mousse de chocolate, crema, nuez y baño de chocolate", "22.00"],
        ["252- Mousse de chocolate, crema, nuez y canela", "20.00"],
        ["253- Mousse de chocolate, crema, canela y miel", "20.00"],
+     ],
+     "Con miel" => [
+       ["254- Miel", "14.00"],
+       ["255- Miel y crema", "16.00"],
+       ["256- Miel, crema y castañas (AL PERIODISTA ROLANDO GRAÑA)", "19.00"],
+       ["257- Miel, ricota, higo y castañas", "20.00"],
+       ["258- Miel, cream, higo y castañas (A CARAMELITO CARRIZO)", "19.00"],
+       ["259- Miel, cream, higo y canela (DEDICADO A FERNANDO LUPIZ)", "19.00"],
+       ["260- Miel y mouse de frutillas o frambuesa (A LAS CHICAS DE HOCKEY DE BANCO CIUDAD)", "19.00"],
+       ["261- Miel, mouse de frutillas, guindas, cerezas, frambuesa y castañas (A JAIME TORRES)", "26.00"],
+       ["262- Miel, mouse de frambuesa, guindas, cerezas, frutillas y castañas (A SOLEDAD PASTORUTTI)", "26.00"],
      ]
    }
 }.each do |category, subcategories|
