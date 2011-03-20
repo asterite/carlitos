@@ -103,7 +103,7 @@ Food.delete_all
        ["74- Jamón crudo y melón (DEDICADO A PEDRO AZNAR)", "20.00"],
        ["75- Jamón crudo, queso y tomate (A LA GLORIOSA J. P.)", "21.00"],
        ["75 BIS- Jamón crudo, queso y tomate con masa de espinaca (A LALO MIR)", "21.00"],
-       ["76- Jamón crudo, queso tomate, palmitos y orégano (A LAS MADRES DE PLAZA DE MAYO)", "24.00"],
+       ["76- Jamón crudo, queso, tomate, palmitos y orégano (A LAS MADRES DE PLAZA DE MAYO)", "24.00"],
      ],
      "Con Jamón Cocido" => [
        ["77- Jamón cocido y queso (PARA EL ESCRITOR JULIO CORTAZAR)", "17.00"],
