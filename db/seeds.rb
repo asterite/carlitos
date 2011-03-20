@@ -345,6 +345,20 @@ Food.delete_all
        ["274- Ricota, higos", "18.00"],
        ["275- Ricota y mousse de chocolate", "18.00"],
      ],
+     "Con puré de manzanas casero" => [
+       ["276- Puré de manzanas", "14.00"],
+       ["276- BIS Puré de manzanas glaseado", "16.00"],
+       ["277- Puré de manzanas, crema (AL PREMIO NOBEL DE LA PAZ, ADOLFO PEREZ ESQUIVEL)", "17.00"],
+       ["278- Puré de manzanas, crema y almendras", "19.00"],
+       ["279- Puré de manzanas, crema, castañas y miel", "20.00"],
+       ["280- Puré de manzanas, crema y baño de chocolate (AL DIBUJANTE CALOI)", "20.00"],
+       ["281- Puré de manzanas, mendicrim", "17.00"],
+       ["282- Puré de manzanas, mendicrim, higos y miel", "21.00"],
+       ["283- Puré de manzanas, ricota", "17.00"],
+       ["284- Puré de manzanas, ricota, castañas y miel", "21.00"],
+       ["285- Puré de manzanas, crema, nuez, azúcar glaseada (AL ARTISTA GUSTAVO GARZON)", "22.00"],
+       ["286- Puré de manzanas, mendicrim, baño de chocolate y coco", "21.00"],
+     ],
    }
 }.each do |category, subcategories|
   subcategories.each do |subcategory, foods|
