@@ -96,7 +96,7 @@ Food.delete_all
        ["71- Panceta, queso, cebolla y chucrut", "14.00"],
      ]
    },
- "PANQUEUES SALADOS" => {
+ "PANQUEQUES SALADOS" => {
      "Con Jamón Crudo" => [
        ["72- Jamón crudo y queso (DEDICADO A ALEJANDRO DOLINA)", "18.00"],
        ["73- Jamón crudo, queso y ananá (DEDICADO A OSVALDO PUGLIESE)", "20.00"],
