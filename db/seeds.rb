@@ -267,6 +267,22 @@ Food.delete_all
        ["208- Dulce de leche y castañas (A IGNACIO COPANI)", "19.00"],
        ["209- Dulce de leche, crema y castañas (A IGNACIO COPANI)", "21.00"],
        ["210- Dulce de leche, mendicrim y almendras bañado en chocolate", "21.00"],
+     ],
+     "Con crema" => [
+       ["211- Crema", "14.00"],
+       ["212- Crema y nuez (DEDICADO A GABRIELA SABATINI)", "16.00"],
+       ["213- Crema, nuez y baño de chocolate y coco", "18.00"],
+       ["214- Crema y ananá glaseado (A LEON GIECO)", "19.00"],
+       ["215- Crema y ananá (AL PADRE DE LOS FISICO CULTURISTAS, ELISEO PANZA)", "18.00"],
+       ["216- Crema y ananá glaseado", "19.00"],
+       ["217- Crema y baño de chocolate (AL HUMORISTA QUINO)", "16.00"],
+       ["218- Crema, banana, baño de chocolate, y coco", "21.00"],
+       ["219- Crema, banana, castañas y miel (A LOS FISICO CULTURISTAS)", "22.00"],
+       ["220- Crema, banana, miel y canela", "21.00"],
+       ["221- Crema, canela y baño de chocolate (A DEVISE MAYO)", "17.00"],
+       ["222- Crema y banana salteada", "20.00"],
+       ["223- Crema, manzana salteada y baño de chocolate", "20.00"],
+       ["224- Crema glaseada con azúcar", "18.00"],
      ]
    }
 }.each do |category, subcategories|
