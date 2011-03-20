@@ -307,6 +307,17 @@ Food.delete_all
        ["242- Mendicrim, higo y miel (AL ACTOR Y DIRECTOR, RICARDO BARTHIS)", "21.00"],
        ["243- Mendicrim, higo, miel y castañas", "23.00"],
        ["244- Mendicrim, banana, miel y canela (A NITO ARTAZA)", "21.00"],
+     ],
+     "Con mousse de chocolate" => [
+       ["245- Mousse de chocolate", "14.00"],
+       ["246- Mousse de chocolate y dulce de leche", "17.00"],
+       ["247- Mousse de chocolate y crema (AL CLUB PLATENSE)", "18.00"],
+       ["248- Mousse de chocolate, crema, baño de chocolate, coco y banana (DEDICADO A SANDRO)", "22.00"],
+       ["249- Mousse de chocolate, crema y nuez (A LA GRAN EVITA)", "20.00"],
+       ["250- Mousse de chocolate, crema, canela y baño de chocolate", "21.00"],
+       ["251- Mousse de chocolate, crema, nuez y baño de chocolate", "22.00"],
+       ["252- Mousse de chocolate, crema, nuez y canela", "20.00"],
+       ["253- Mousse de chocolate, crema, canela y miel", "20.00"],
      ]
    }
 }.each do |category, subcategories|
