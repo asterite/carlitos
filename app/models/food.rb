@@ -8,7 +8,7 @@ class Food < ActiveRecord::Base
 
   def self.parse(text, options = {})
     text =~ /^(?:(.+?)-)?(.+?)(?:\((.+?)\))?$/
-    Food.new(options.merge(:number => $1.try(:strip) || '', :description => $2.strip, :dedicated_to => $5.try(:strip) || ''))
+    Food.new(options.merge(:number => $1.try(:strip) || '', :description => $2.strip, :dedicated_to => $3.try(:strip) || ''))
   end
 
   def as_json(options = {})

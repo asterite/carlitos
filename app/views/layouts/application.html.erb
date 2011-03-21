@@ -2,12 +2,17 @@
 <html>
 <head>
   <title>Carlitos</title>
-  <%= stylesheet_link_tag :all %>
-  <%= csrf_meta_tag %>
+  <style>
+    body { background-color: #058; color: white; font-family: verdana; }
+    ul { list-style: none; }
+    #main { margin-left: 15%; margin-right: 15%; }
+  </style>
 </head>
 <body>
 
+<div id="main">
 <%= yield %>
+</div>
 
 </body>
 </html>
