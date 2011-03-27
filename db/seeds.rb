@@ -359,6 +359,22 @@ Food.delete_all
        ["285- Puré de manzanas, crema, nuez, azúcar glaseada (AL ARTISTA GUSTAVO GARZON)", "22.00"],
        ["286- Puré de manzanas, mendicrim, baño de chocolate y coco", "21.00"],
      ],
+     "Con mermelada (traída del Bolsón y San Carlos de Bariloche)" => [
+       ["287- Ciruela", "16.00"],
+       ["288- Zarzamora", "16.00"],
+       ["289- Boysenberries", "17.00"],
+       ["290- Ciruela y crema", "19.00"],
+       ["291- Zarzamora y crema", "19.00"],
+       ["292- Boysenberries y crema", "19.00"],
+       ["293- Ciruela, crema, higos y miel", "21.00"],
+       ["294- Zarzamora, ricota, higos y miel", "21.00"],
+       ["295- Boysenberries, mendicrim, higos y miel", "22.00"],
+       ["296- Ciruela, ricota, castañas y miel", "22.00"],
+       ["297- Zarzamora, crema, castañas y miel", "23.00"],
+       ["298- Boysenberries, mendicrim, castañas y miel", "24.00"],
+       ["299- Ciruela, ricota, nuez", "20.00"],
+       ["300- Boysenberries, ricota y almendras", "21.00"],
+     ],
    }
 }.each do |category, subcategories|
   subcategories.each do |subcategory, foods|
